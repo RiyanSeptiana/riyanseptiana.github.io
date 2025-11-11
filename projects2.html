@@ -55,13 +55,13 @@
                                 <!-- <h2 class="text-primary fw-bolder mb-0"></h2> -->
                                 <!-- Download resume button-->
                                 <!-- Note: Set the link href target to a PDF file within your project-->
-                                <a class="btn btn-outline-dark px-4 py-3" href="./projects2.html">
-                                    <!-- <div class="d-inline-block bi bi- me-2"></div> -->
-                                    Next
+                                <a class="btn btn-outline-dark px-4 py-3" href="./projects.html">
+                                    <!-- <div class="d-inline-block bi bi-download me-2"></div> -->
+                                    Back
                                 </a>
-                                <a class="btn btn-primary px-4 py-3" href="./assets/pdf/portofolioRiyan.pdf">
+                                <a class="btn btn-primary px-4 py-3" href="./assets/pdf/portofolioRiyan_PLC.pdf">
                                     <div class="d-inline-block bi bi-download me-2"></div>
-                                    Download Detail Project
+                                    Download Detail PLC Excercise 
                                 </a>
                             </div>
 
@@ -70,14 +70,16 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Labview as HMI to control and monitoring system</h2>
-                                            <p>This project integrates LabVIEW as a Human Machine Interface (HMI) to control a motor and
-                                                lamp based on sensor inputs. A temperature sensor regulates motor speed, while an
-                                                ultrasonic sensor controls the lamp. The system allows users to define input/output pins,
-                                                monitor servo angle, and visualize logic indicators in real time.
+                                            <h2 class="fw-bolder">Project 1 — Pressure Control System</h2>
+                                            <p>This project simulates an automatic pressure control system using two pressure sensors and
+                                                two actuators. The pump (O:0/0) is energized when the receiver tank pressure is below 90 PSI
+                                                and stops once it reaches 110 PSI. Two pressure switches are used — (I:0/0) for the lower limit
+                                                and (I:0/1) for the upper limit.
+                                                A running indicator (O:0/1) turns ON when pressure exceeds 90 PSI, indicating system
+                                                readiness.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/1_Labview.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project1.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -86,15 +88,13 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Pneumatic System :Study case of Assembly line</h2>
-                                            <p>This project simulates a pneumatic sequencer system controlling three actuators to perform
-                                                unit transfer operations. The process begins with a driver lifter descending to pick up the
-                                                unit, then the lifter laterally moves to another conveyor to place the unit at a specific
-                                                location detected by sensors. Once the unit is positioned on the conveyor, the conveyor
-                                                transports the unit to the next station
+                                            <h2 class="fw-bolder">Project 2 — Conveyor Sorting and Filling System</h2>
+                                            <p>This conveyor system sorts and fills red- or blue-labeled boxes. A proximity sensor detects
+                                                incoming boxes. If the box has a red label, the pecan valve opens; if blue, the walnut valve
+                                                opens. When the level switch detects the box is full, it advances to the next station.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/2_Pneumatic.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project2.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -103,13 +103,14 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Control 3 Motor Phase</h2>
-                                            <p>This project demonstrates how to control a three-phase motor using electrical diagrams
-                                                divided into control and power circuits. It covers multiple motor control methods such as
-                                                forward/reverse direction, Star-Delta configuration, dual-speed control, and braking systems.
+                                            <h2 class="fw-bolder">Project 3 — Material Tracking and Inventory Logging</h2>
+                                            <p>This project manages inventory for three material types: widget (123), doodads (456), and
+                                                wockies (789). A scanner reads codes formatted as PPP-QQ:D, representing part number,
+                                                quantity, and direction (1 = inbound, 2 = outbound). Data is stored in dedicated integer registers
+                                                for each material type.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/3_3 phase motor.png" alt="..." />
+                                        <img class="img-fluid" src="" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -118,17 +119,15 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Control PLC : Study case Temperature - level - pressure</h2>
-                                            <p>This automatic distillation system uses level, temperature, and pressure sensors to simulate
-                                                essential oil production.
-                                                <ul>
-                                                    <li>The level sensor controls the pump based on tank water level</li>
-                                                    <li>The temperature sensor activates or stops the heater</li>
-                                                    <li>The pressure sensor opens or closes a valve to regulate pressure for optimal oil quality</li>
-                                                </ul>
+                                            <h2 class="fw-bolder">Project 4 — Modular Water System Sequencer</h2>
+                                            <p>This system controls a servo motor moving between multiple stations: fill, drain, and flush. Upon
+                                                pressing start, the servo moves sequentially between each position with predefined timing and
+                                                returns to home. Limit switches confirm each station position. There is a feature we can control
+                                                it in manual mode to go through to specific station and we can disable some of station to go
+                                                through to the next station
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/4_PLC.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project4.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -137,14 +136,13 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Data Communication</h2>
-                                            <p>This project monitors henhouse conditions via an Android app. The ultrasonic sensor detects
-                                                feed level — if the distance is too high, the feed is empty, and an LED indicator turns on. The
-                                                temperature sensor monitors environmental temperature and humidity, triggering an
-                                                indicator if values are abnormal.
+                                            <h2 class="fw-bolder">Project 5 — Flow Measurement using Digital Rotameter</h2>
+                                            <p>This project simulates flow measurement using a digital rotameter that generates one pulse per
+                                                6.3 gallons. A timer simulates the pulse every 12 seconds. The system calculates total flow and
+                                                flowrate per minute based on pulse count.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/5_Aquitition.png.jpg" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project5.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -153,13 +151,13 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder"> IOT-based Chicken Coop Management</h2>
-                                            <p>This IoT-based chicken coop management system monitors and controls feeding, drinking,
-                                                and temperature via Android. It uses three sensors and actuators connected to Firebase for
-                                                real-time data storage and control
+                                            <h2 class="fw-bolder">Project 6 — Running Time Tracker</h2>
+                                            <p>This system tracks machine operation time in a 1000h:h:m:s format using integer registers.
+                                                When the system runs, the timer increments; when stopped, it freezes. A reset button resets all
+                                                counters to zero.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/6_IoT.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project6.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -168,13 +166,13 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Production Planning Control : Study Case product of Teaching Aid Pneumatic</h2>
-                                            <p>This teaching aid demonstrates Production Planning and Control (PPC) using pneumatic and
-                                                electro-pneumatic components. The system includes 17 parts such as single/double
-                                                cylinders, 3/2 and 5/2 valves, OR/AND fittings, and one-way flow controls
+                                            <h2 class="fw-bolder">Project 7 — Oxygen Sensor Calibration System</h2>
+                                            <p>This calibration system uses two reference gases (0% and 30% O₂) to recalibrate an oxygen
+                                                sensor. Each gas flows for 10 seconds, and average readings are used to compute the
+                                                calibration factor using standard formulas.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/7_PPA.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project7.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -183,13 +181,13 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder"> Distributed Control System</h2>
-                                            <p>This project monitors a testing station using Wonderware Intouch as the HMI, with Omron
-                                                and Siemens PLCs acting as control stations. Data communication is managed via
-                                                KepServerEX6
+                                            <h2 class="fw-bolder">Project 8 — Vacuum Pressure Control without PID</h2>
+                                            <p>This system maintains a vacuum pressure of 15 inHg without using PID. Motor speed is adjusted
+                                                stepwise based on sensor deviation from the setpoint, evaluated every 10 seconds to ensure
+                                                stable suction performance
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/8_dcs.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project8.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -198,13 +196,13 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">SCADA and DCS : Study Case Handling Station In Assembly Line</h2>
-                                            <p>This SCADA/DCS project allows remote monitoring and control of multiple production plants
-                                                using Wonderware Intouch. Data is logged to SQL Server and Excel, enabling centralized
-                                                supervision and production analysis
+                                            <h2 class="fw-bolder">Project 9 — Mode and Function Sequencing System</h2>
+                                            <p>This project manages a dual-mode, dual-function sequence operating as Mode1F1 → Mode1F2 →
+                                                Mode2F1 → Mode2F2 with each cycle lasting 10 seconds. System states and counters are stored
+                                                as strings and exported in spreadsheet-like format.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/9_Scada.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project9.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
@@ -213,47 +211,14 @@
                                 <div class="card-body p-0">
                                     <div class="d-flex1 align-items-center">
                                         <div class="p-5">
-                                            <h2 class="fw-bolder">Control and Monitoring of AC Server Room Polman Bandung</h2>
-                                            <p>This system controls three air conditioners in the Polman Bandung server room, alternating
-                                                every two days. Temperature data is stored in MySQL and Antares, with automatic
-                                                notifications sent to operators when temperatures exceed thresholds
+                                            <h2 class="fw-bolder">Project 10 — Pump Protection and HOA Control</h2>
+                                            <p>This project controls a pump with a 10s ON / 5s OFF cycle. The pump stops automatically if no
+                                                flow is detected for 5 seconds or if pressure exceeds 30 PSI for 5 seconds. Equipped with Flow
+                                                Fault and Pressure Fault indicators, Silence and Reset buttons, and Hand-Off-Auto control for
+                                                manual or automatic operation.
                                             </p>
                                         </div>
-                                        <img class="img-fluid" src="./assets/project/width400/10_puskom.png" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 11-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex1 align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Design and Build Ventilator Indonesia</h2>
-                                            <p>This ventilator system was designed for COVID-19 patients, featuring Volume Control and
-                                                Pressure Control modes. It uses pressure, oxygen, and flow sensors to calculate control
-                                                parameters for the servo motor. Equipped with HMI alarms and integrated with Node-RED
-                                                for remote monitoring
-                                            </p>
-                                        </div>
-                                        <img class="img-fluid" src="./assets/project/width400/11_ventinesia.png" alt="..." />
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 12-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex1 align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Design and Build Multi Device Infusion Control and Monitoring System Based on the Internet of Things</h2>
-                                            <p>This IoT-based research project develops three infusion devices capable of flowrate control
-                                                and hazard monitoring, including air bubble detection, blockage, and empty infusion. Data is
-                                                transmitted via MQTT to a Node-RED Server, visualized on Nextion HMI and nurse
-                                                monitoring screens. Each device includes a mini UPS for power backup. There is motor servo
-                                                can control how much the pressing to pipe infusion using PID base on flowrate that set by
-                                                the operator
-                                            </p>
-                                        </div>
-                                        <img class="img-fluid" src="./assets/project/width400/12_mifus.png" alt="..." />
+                                        <img class="img-fluid" src="./assets/project/width400/project10.png" alt="..." />
                                     </div>
                                 </div>
                             </div>
